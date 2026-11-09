@@ -337,7 +337,7 @@ namespace LocalMinimumGoldenSection
 
                 calculationReady = true;
                 LoadStepsToGrid();
-                currentStepIndex = 0;
+                currentStepIndex = steps.Count - 1;
                 RenderCurrentStep();
                 statusLabel.Text = "Расчёт подготовлен. Просмотрите шаги или включите автовоспроизведение.";
                 UpdateMenuState();
